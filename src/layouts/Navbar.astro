@@ -1,12 +1,25 @@
-<nav class="flex items-center justify-between p-4 bg-white text-gray-900 container mx-auto">
-  <div>
-    <img src="/images/rocket.png" alt="" class="max-w-10 h-auto" />
-    <p>Ideas Challenge</p>
-  </div>
-  <p>About</p>
-  <p>Strategic Thrust Areas</p>
-  <p>Heilmeier Questions</p>
-  <p>Apply</p>
+---
+import Logo from './src/assets/logos/Ideas-challenge-logo-header.svg'
+---
+
+<nav class="flex items-center justify-center md:justify-between p-4 bg-white text-gray-900 md:container mx-auto">
+    <Logo />
+  <ul class=" hidden lg:flex gap-6">
+    <li><a href="#about">About</a></li>
+    <li><a href="#thrust-areas">Strategic Thrust Areas</a></li>
+    <li><a href="#heilmeier">Heilmeier Questions</a></li>
+    <li><a href="#Apply">Apply</a></li>
+  </ul>
 </nav>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+
+a {
+ color:#565c65;
+ font-weight: bold;
+}
+
+a:hover{
+  color: #028493;
+}
+</style>
