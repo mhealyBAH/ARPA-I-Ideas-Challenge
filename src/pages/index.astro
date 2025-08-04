@@ -1,11 +1,58 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Button from "../components/Button.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<BaseLayout>
+  <div>
+    <div class="background flex">
+      <div class="popout my-auto">
+        <div class="w-full h-full grid grid-flow-col grid-rows-4 grid-cols-2 gap-1">
+          <p>
+            Build America's transportation future - submit bold ideas to ARPA-I's Ideas Challenge and transform how we
+            move, build, and connect!
+          </p>
+          <strong><h2 class="bold">Now accepting application until [date]</h2></strong>
+          <Button
+            text="Submit Your Ideas Now at Challenge.gov"
+            href="https://www.challenge.gov"
+            color="dark"
+            iconSrc="/images/rocket.png"
+          />
+          <Button
+            text="Sign up for the upcoming Webinar"
+            href="https://www.example.com/webinar"
+            color="light"
+            iconSrc="/images/rocket.png"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<style scoped lang="scss">
+  .background {
+    height: 60vh;
+    width: 100%;
+    background:
+      linear-gradient(0deg, rgba(28, 176, 230, 0.45) 0%, rgba(28, 176, 230, 0.45) 100%),
+      linear-gradient(180deg, rgba(28, 176, 230, 0.54) 0%, rgba(2, 70, 77, 0.79) 100%),
+      url("/images/FirstBGImage.jpeg") lightgray 50% / cover no-repeat;
+    background-blend-mode: multiply, normal;
+  }
+
+  .popout {
+    background-color: white;
+    height: 60%;
+    width: 50%;
+    position: relative;
+    margin-left: auto;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 8% 100%);
+
+    .grid {
+      margin-left: 10%;
+      padding: 2rem;
+    }
+  }
+</style>

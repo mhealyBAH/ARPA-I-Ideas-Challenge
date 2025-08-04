@@ -1,0 +1,28 @@
+---
+const { text, href, color, iconSrc } = Astro.props;
+
+const lightStyle = {
+  backgroundColor: "white",
+  color: "rgba(24, 171, 184, 1)",
+  border: "1px solid rgba(24, 171, 184, 1)",
+};
+const darkStyle = {
+  backgroundColor: "rgba(24, 171, 184, 1)",
+  color: "white",
+};
+const buttonStyle = color === "light" ? lightStyle : darkStyle;
+---
+
+<button style={buttonStyle} class="flex items-center gap-2">
+  {text}
+  <img src={iconSrc} class="w-5 h-5" />
+</button>
+
+<style scoped>
+  button {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    font-weight: 600;
+  }
+</style>
