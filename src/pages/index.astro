@@ -4,8 +4,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout>
-  <div>
-    <div class="background flex">
+  <main>
+    <section class="background flex">
       <div class="popout my-auto">
         <div class="w-full h-full grid grid-flow-col grid-rows-4 grid-cols-2 gap-1">
           <p>
@@ -27,32 +27,178 @@ import BaseLayout from "../layouts/BaseLayout.astro";
           />
         </div>
       </div>
+    </section>
+    <section class="container mx-auto my-8">
+      <h1>ARPA-I's $1 Million Prize Competition</h1>
+      <div class="grid grid-cols-2 gap-4">
+        <div>
+          <h2>Stage 1</h2>
+          <p>
+            Submit a 4-5 page Concept Paper with your breakthrough transportation idea. Win one of up to 15 finalist
+            prizes worth $225,000, with top 5 winners receiving a further $75,000. You can even submit multiple ideas!
+          </p>
+        </div>
+        <div>
+          <h2>Stage 2</h2>
+          <p>
+            Finalists submit full R&D project proposals for a chance to win a one of seven $100,000 prizes. More details
+            on Stage 2 coming soon.
+          </p>
+        </div>
+      </div>
+      <h2>Stage 1</h2>
+      <p>
+        Submit a Concept Paper describing a project idea for developing a breakthrough transportation technology and/or
+        capability
+      </p>
+      <ul>
+        <li>
+          Up to 15 Stage 1 finalist prizes and up to 5 best Innovation Concept prizes may be awarded. Each Stage 1
+          finalist will be awarded a prize of $15,000 and invited to U.S. DOT Innovation Summit in late fall where they
+          will present their concept in a 7-minute pitch to a distinguished panel of judges and audience to compete for
+          the 5 Stage 1 best Innovation Concept awards worth an additional $15,000 each.
+        </li>
+      </ul>
+      <Button text="Accepting Applications Now" href="#" color="dark" iconSrc="/images/rocket.png" />
+      <h2>Stage 2</h2>
+      <p>
+        All Stage 1 finalists will be eligible to submit a detailed project proposal and plans to compete in Stage 2:
+      </p>
+      <ul>
+        <li>Up to 7 Stage 2 finalist prizes may be awarded to recognize the best proposals and plans submitted.</li>
+        <li>Each Stage 2 prize will have a maximum of $100,000.</li>
+        <li>More details for Stage 2 will be provided in subsequent communications to Stage 1 applicants.</li>
+      </ul>
+      <strong>The total value of all Stage 1 and 2 prizes awarded will be a maximum of $1,000,000.</strong>
+    </section>
+    <section class="container mx-auto my-8">
+      <h1>ARPA-I's Strategic Thrust Areas</h1>
+      <div>
+        <h2>Knowledge</h2>
+        <p>Knowing everything we need to know about our transportation infrastructure systems.</p>
+      </div>
+      <div>
+        <h2>Optimization</h2>
+        <p>
+          Optimizing the movement of people and goods at scale in real time to radically increase system safety, enhance
+          performance, and decrease costs, leveraging connectivity and automation.
+        </p>
+      </div>
+      <div>
+        <h2>Construction</h2>
+        <p>Constructing infrastructure safer, faster, more cost-effectively, and with a longer lifespan.</p>
+      </div>
+      <div>
+        <h2>Enabling and Foundational Technologies</h2>
+        <p>Enabling and other foundational technologies that create the basis for future technologies</p>
+      </div>
+      <h2 class="text-center">Other ARPA-I Programs and Pilots</h2>
+      <div class="grid grid-cols-2 gap-4">
+        <div>
+          <h3>INSIGHTS</h3>
+          <p>
+            The Infrastructure Systems Insights through Geospatial-sensing for Holistic Transportation Solutions
+            (INSIGHTS) project is ARPA-I's first step towards enabling development of practical, cost-effective,
+            continuously updated digital models of America's infrastructure at scale, including streets, highways,
+            ports, rail lines, airports, and pipelines.
+          </p>
+          <Button text="ARPA-I INSIGHTS" href="#" color="light" />
+        </div>
+      </div>
+      <div>
+        <h3>X-BRIDGE</h3>
+        <p>
+          The ARPA-I eXceptional Bridges through Innovative Design and Groundbreaking Engineering (X-BRIDGE) program is
+          focused on creating transformative materials, designs, and construction techniques that can deliver bridges at
+          half the cost, in half the time, and with twice the lifespan.
+        </p>
+        <Button text="ARPA-I X-BRIDGE" href="#" color="light" />
+      </div>
+    </section>
+    <section class="text-center">
+      <h1>What are the Heilmeier Questions?</h1>
+      <p>Generating big rewards means taking big risks.</p>
+      <strong>But how much risk is worth taking?</strong>
+      <p>
+        At ARPA-I, we use the <span>
+          <a href="https://www.darpa.mil/about/heilmeier-catechism">Heilmeier Catechism</a>
+        </span>
+        to assess and think through every proposed research program.
+      </p>
+      <div class="grid grid-cols-3">
+        <ol>
+          <li>What are you trying to do? Articulate your objectives using absolutely no jargon.</li>
+          <li>How is it done today, and what are the limits of current practice?</li>
+          <li>What is new in your approach and why do you think it will be successful?</li>
+          <li>Who cares? If you are successful, what difference will it make?</li>
+          <li>What are the risks?</li>
+          <li>How much will it cost</li>
+          <li>How long will it take?</li>
+          <li>What are the mid-term and final “exams” to check for success?</li>
+        </ol>
+      </div>
+      <strong>Use our recommended templates based on The Heilmeier Catechism</strong>
+      <Button text="Concept Template" href="#" color="dark" />
+      <Button text="Abstract Template" href="#" color="dark" />
+      <Button text="Slide Templates" href="#" color="dark" />
+    </section>
+    <section class="bottom-background flex">
+      <div class="bottom-popout my-auto">
+        <h2>Excited to Apply?</h2>
+        <p>
+          Visit our challenge.gov site for authoritative resources on how to apply, details of prices, and timeline.
+        </p>
+        <Button text="Visit Challenge.gov to get started" href="#" color="dark" iconSrc="/images/rocket.png" />
+        <p>Send your questions to ideas.arpa-I@dot.gov</p>
+      </div>
+    </section>
+    <div class="w-full">
+      <a href="#">Return to top</a>
     </div>
-  </div>
-</BaseLayout>
-
-<style scoped lang="scss">
-  .background {
-    height: 60vh;
-    width: 100%;
-    background:
-      linear-gradient(0deg, rgba(28, 176, 230, 0.45) 0%, rgba(28, 176, 230, 0.45) 100%),
-      linear-gradient(180deg, rgba(28, 176, 230, 0.54) 0%, rgba(2, 70, 77, 0.79) 100%),
-      url("/images/FirstBGImage.jpeg") lightgray 50% / cover no-repeat;
-    background-blend-mode: multiply, normal;
-  }
-
-  .popout {
-    background-color: white;
-    height: 60%;
-    width: 50%;
-    position: relative;
-    margin-left: auto;
-    clip-path: polygon(0 0, 100% 0%, 100% 100%, 8% 100%);
-
-    .grid {
-      margin-left: 10%;
-      padding: 2rem;
+    <div class="w-full bg-teal-600 text-white">Logos/Icons</div>
+  </main>
+  <style scoped lang="scss">
+    .background {
+      height: 60vh;
+      width: 100%;
+      background:
+        linear-gradient(0deg, rgba(28, 176, 230, 0.45) 0%, rgba(28, 176, 230, 0.45) 100%),
+        linear-gradient(180deg, rgba(28, 176, 230, 0.54) 0%, rgba(2, 70, 77, 0.79) 100%),
+        url("/images/FirstBGImage.jpeg") lightgray 50% / cover no-repeat;
+      background-blend-mode: multiply, normal;
     }
-  }
-</style>
+
+    .popout {
+      background-color: white;
+      height: 60%;
+      width: 50%;
+      position: relative;
+      margin-left: auto;
+      clip-path: polygon(0 0, 100% 0%, 100% 100%, 8% 100%);
+
+      .grid {
+        margin-left: 10%;
+        padding: 2rem;
+      }
+    }
+
+    .bottom-popout {
+      clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+      background-color: white;
+      height: 50%;
+      width: 50%;
+      position: relative;
+      margin-right: auto;
+    }
+
+    .bottom-background {
+      background:
+        linear-gradient(0deg, rgba(28, 176, 230, 0.45) 0%, rgba(28, 176, 230, 0.45) 100%),
+        linear-gradient(180deg, rgba(28, 176, 230, 0.54) 0%, rgba(2, 70, 77, 0.79) 100%),
+        url("/images/SecondBGImage.jpeg") lightgray 50% / cover no-repeat;
+      background-blend-mode: multiply, normal;
+      height: 50vh;
+      width: 100%;
+    }
+  </style>
+</BaseLayout>
