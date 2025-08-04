@@ -1,6 +1,10 @@
 ---
 import Button from "../components/Button.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import ARPA_I_DOT_Logo from "../assets/logos/ARPA-I-DOT-lockup-footer.svg";
+import Twitter_Icon from "../assets/icons/twitter.svg";
+import Facebook_Icon from "../assets/icons/facebook.svg";
+import Instagram_Icon from "../assets/icons/instagram.svg";
 ---
 
 <BaseLayout>
@@ -155,10 +159,19 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     <div class="w-full">
       <a href="#">Return to top</a>
     </div>
-    <div class="w-full bg-teal-600 text-white">Logos/Icons</div>
-
-
-
+    <div class="text-white logo-strip text-center p-6">
+      <div class="w-full xl:max-w-5xl xl:px-6 pr-[7%] xs:pr-0 mx-auto flex flex-col sm:flex-row justify-between">
+        <div class="inline-block">
+          <ARPA_I_DOT_Logo class="w-100 sm:w-full" />
+        </div>
+        <div class="inline-block">
+          <Facebook_Icon class="inline-block mx-1" />
+          <Twitter_Icon class="inline-block mx-1" />
+          <Instagram_Icon class="inline-block mx-1" />
+        </div>
+      </div>
+    </div>
+  </main>
   <style scoped lang="scss">
  .hero-message:before{
       content: "test";
@@ -210,6 +223,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       background-blend-mode: multiply, normal;
       height: 50vh;
       width: 100%;
+    }
+
+    .logo-strip {
+      background-color: rgba(0, 120, 135, 1);
     }
   </style>
 </BaseLayout>
