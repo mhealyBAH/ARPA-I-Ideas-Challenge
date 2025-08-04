@@ -20,20 +20,23 @@ import Footer from "./Footer.astro";
     <title>Ideas Challenge</title>
   </head>
   <body>
-    <main>
+    
       <Navbar />
+
+    
+    <main>
       <slot />
-      <Footer />
     </main>
+   
+      <Footer />
+   
+    
   </body>
 </html>
 
 <style>
   html,
   body {
-    margin: 0;
-    width: 100%;
-    height: 100%;
     font-family: "Public Sans", sans-serif;
   }
 </style>

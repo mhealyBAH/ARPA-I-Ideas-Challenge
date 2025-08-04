@@ -1,8 +1,8 @@
 ---
 import Logo from './src/assets/logos/Ideas-challenge-logo-header.svg'
 ---
-
-<nav class="flex items-center justify-center md:justify-between p-4 bg-white text-gray-900 md:container mx-auto">
+<header class="sticky top-0 bg-white shadow-md">
+<nav class="flex items-center justify-center md:justify-between p-4 bg-white text-gray-900 md:container mx-auto sticky">
     <Logo />
   <ul class=" hidden lg:flex gap-6">
     <li><a href="#about">About</a></li>
@@ -11,12 +11,13 @@ import Logo from './src/assets/logos/Ideas-challenge-logo-header.svg'
     <li><a href="#Apply">Apply</a></li>
   </ul>
 </nav>
-
+</header>
 <style scoped lang="scss">
 
 a {
  color:#565c65;
  font-weight: bold;
+ padding: 1em 0;
 }
 
 a:hover{
