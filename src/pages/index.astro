@@ -7,185 +7,232 @@ import Facebook_Icon from "../assets/icons/facebook.svg";
 import Instagram_Icon from "./src/assets/icons/instagram.svg";
 import HeroLogo from "./src/assets/logos/hero-logo.svg";
 import Side from "./src/assets/side.svg";
+import Knowledge from "./src/assets/icons/Knowledge-icon.svg";
+import Optimization from "./src/assets/icons/Optimization-icon.svg";
+import Construction from "./src/assets/icons/Construction-icon.svg";
+import Technologies from "./src/assets/icons/Technologies-icon.svg";
 ---
 
 <BaseLayout>
-  <section class="background flex items-strech pt-30 pb-10 lg:pt-50 lg:pb-10">
+  <section class="background flex pt-20 pb-10 2xl:pt-50 lg:pb-10">
     <div class="flex flex-col w-full justify-center">
-      <div class="flex my-auto w-full justify-end gap-0">
+      <div class="flex my-auto w-full justify-end gap-0 mb-15">
         <div class="hidden lg:block w-20"><Side class="" /></div>
 
         <div class="flex mx-auto lg:mx-0 container w-full md:w-10/12 lg:w-7/12 xl:w-6/12 bg-white hero-side">
           <div class="flex flex-col gap-2 h-full lg:w-xl text-base lg:text-lg xl:text-xl p-5">
-            <HeroLogo class="w-full hidden sm:block" />
+            <HeroLogo class="w-full" />
             <div class="flex flex-col gap-2 m-0 lg:ms-20">
               <p>Build America's transportation future - submit bold ideas to ARPA-I's Ideas Challenge and transform how we move, build, and connect!</p>
-              <strong><h2 class="bold">Now accepting application until [date]</h2></strong>
+              <strong><p class="bold">Now accepting application until [date]</p></strong>
               <Button text="Submit Your Ideas Now at Challenge.gov" href="https://www.challenge.gov" color="dark" iconSrc="./src/assets/icons/lightbulb_outline.svg" />
               <Button text="Sign up for the upcoming Webinar" href="https://www.example.com/webinar" color="light" iconSrc="./src/assets/icons/group_add.svg" />
             </div>
           </div>
         </div>
       </div>
-      <div class=" flex justify-center">
-        <ARPA_I_DOT_Logo class=" scale-100 xl:scale-140 mx-7 mt-10 lg:mt-20" />
+      <div class="justify-center p-5 lg:pb-0 hidden md:flex">
+        <ARPA_I_DOT_Logo width={600} class="" />
       </div>
     </div>
   </section>
-  <section class="container mx-auto my-8">
-    <h1>ARPA-I's $1 Million Prize Competition</h1>
-    <div class="grid grid-cols-2 gap-4">
-      <div>
-        <h2>Stage 1</h2>
+  <section class="container mx-auto my-8 justify-center">
+    <h1 class="text-3xl text-balance font-bold text-center my-8 text">ARPA-I's $1 Million Prize Competition</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pb-8 px-4">
+      <div class="border-2 rounded-2xl border-cyan-600 bg-white shadow-lg p-4">
+        <h2 class="font-bold text-lg">Stage 1</h2>
         <p>
           Submit a 4-5 page Concept Paper with your breakthrough transportation idea. Win one of up to 15 finalist prizes worth $225,000, with top 5 winners receiving a further $75,000. You can even
           submit multiple ideas!
         </p>
       </div>
-      <div>
-        <h2>Stage 2</h2>
+      <div class="border-2 rounded-2xl border-cyan-600 bg-white shadow-lg p-4">
+        <h2 class="font-bold text-lg">Stage 2</h2>
         <p>Finalists submit full R&D project proposals for a chance to win a one of seven $100,000 prizes. More details on Stage 2 coming soon.</p>
       </div>
     </div>
-    <h2>Stage 1</h2>
-    <p>Submit a Concept Paper describing a project idea for developing a breakthrough transportation technology and/or capability</p>
-    <ul>
-      <li>
-        Up to 15 Stage 1 finalist prizes and up to 5 best Innovation Concept prizes may be awarded. Each Stage 1 finalist will be awarded a prize of $15,000 and invited to U.S. DOT Innovation Summit
-        in late fall where they will present their concept in a 7-minute pitch to a distinguished panel of judges and audience to compete for the 5 Stage 1 best Innovation Concept awards worth an
-        additional $15,000 each.
+
+    <ol class="usa-process-list">
+      <li class="usa-process-list__item">
+        <h4 class="usa-process-list__heading">Stage 1</h4>
+        <p class="margin-top-05">Submit a Concept Paper describing a project idea for developing a breakthrough transportation technology and/or capability</p>
+        <ul>
+          <li>
+            Up to 15 Stage 1 finalist prizes and up to 5 best Innovation Concept prizes may be awarded. Each Stage 1 finalist will be awarded a prize of $15,000 and invited to U.S. DOT Innovation
+            Summit in late fall where they will present their concept in a 7-minute pitch to a distinguished panel of judges and audience to compete for the 5 Stage 1 best Innovation Concept awards
+            worth an additional $15,000 each.
+          </li>
+        </ul>
       </li>
-    </ul>
-    <Button text="Accepting Applications Now" href="#" color="dark" iconSrc="/images/rocket.png" />
-    <h2>Stage 2</h2>
-    <p>All Stage 1 finalists will be eligible to submit a detailed project proposal and plans to compete in Stage 2:</p>
-    <ul>
-      <li>Up to 7 Stage 2 finalist prizes may be awarded to recognize the best proposals and plans submitted.</li>
-      <li>Each Stage 2 prize will have a maximum of $100,000.</li>
-      <li>More details for Stage 2 will be provided in subsequent communications to Stage 1 applicants.</li>
-    </ul>
-    <strong>The total value of all Stage 1 and 2 prizes awarded will be a maximum of $1,000,000.</strong>
+      <li class="usa-process-list__item">
+        <h4 class="usa-process-list__heading">Stage 2</h4>
+        <p>All Stage 1 finalists will be eligible to submit a detailed project proposal and plans to compete in Stage 2:</p>
+        <ul>
+          <li>Up to 7 Stage 2 finalist prizes may be awarded to recognize the best proposals and plans submitted.</li>
+          <li>Each Stage 2 prize will have a maximum of $100,000.</li>
+          <li>More details for Stage 2 will be provided in subsequent communications to Stage 1 applicants.</li>
+        </ul>
+      </li>
+    </ol>
+    <h1 class="text-3xl text-balance font-bold text-center py-8 w-full lg:w-6/12 m-auto">The total value of all Stage 1 and 2 prizes awarded will be a maximum of $1,000,000.</h1>
   </section>
-  <section class="container mx-auto my-8">
-    <h1>ARPA-I's Strategic Thrust Areas</h1>
-    <div>
-      <h2>Knowledge</h2>
-      <p>Knowing everything we need to know about our transportation infrastructure systems.</p>
-    </div>
-    <div>
-      <h2>Optimization</h2>
-      <p>Optimizing the movement of people and goods at scale in real time to radically increase system safety, enhance performance, and decrease costs, leveraging connectivity and automation.</p>
-    </div>
-    <div>
-      <h2>Construction</h2>
-      <p>Constructing infrastructure safer, faster, more cost-effectively, and with a longer lifespan.</p>
-    </div>
-    <div>
-      <h2>Enabling and Foundational Technologies</h2>
-      <p>Enabling and other foundational technologies that create the basis for future technologies</p>
-    </div>
-    <h2 class="text-center">Other ARPA-I Programs and Pilots</h2>
-    <div class="grid grid-cols-2 gap-4">
-      <div>
-        <h3>INSIGHTS</h3>
-        <p>
-          The Infrastructure Systems Insights through Geospatial-sensing for Holistic Transportation Solutions (INSIGHTS) project is ARPA-I's first step towards enabling development of practical,
-          cost-effective, continuously updated digital models of America's infrastructure at scale, including streets, highways, ports, rail lines, airports, and pipelines.
-        </p>
-        <Button text="ARPA-I INSIGHTS" href="#" color="light" />
+
+  <section class="bg-gray-100 py-1">
+    <div class="container mx-auto my-8 py-8 gap-6">
+      <h1 class="text-3xl text-balance font-bold text-center  text">ARPA-I's Strategic Thrust Areas</h1>
+
+      <div class="flex">
+        <Knowledge class="min-w-30 my-auto" />
+        <div class="flex flex-col my-auto">
+          <h2 class="font-bold text-2xl">Knowledge</h2>
+          <p class=" text-lg">Knowing everything we need to know about our transportation infrastructure systems.</p>
+        </div>
+      </div>
+
+      <div class="flex">
+        <Optimization class="min-w-30 my-auto" />
+        <div class="flex flex-col my-auto">
+          <h2 class="font-bold text-2xl">Optimization</h2>
+          <p class=" text-lg">Optimizing the movement of people and goods at scale in real time to radically increase system safety, enhance performance, and decrease costs, leveraging connectivity and automation.</p>
+        </div>
+      </div>
+
+      <div class="flex">
+        <Construction class="min-w-30 my-auto" />
+        <div class="flex flex-col my-auto">
+          <h2 class="font-bold text-2xl">Construction</h2>
+          <p class=" text-lg">Constructing infrastructure safer, faster, more cost-effectively, and with a longer lifespan.</p>
+        </div>
+      </div>
+
+      <div class="flex">
+        <Technologies class="min-w-30 my-auto" />
+        <div class="flex flex-col my-auto">
+          <h2 class="font-bold text-2xl">Enabling and Foundational Technologies</h2>
+          <p class=" text-lg">Enabling and other foundational technologies that create the basis for future technologies</p>
+        </div>
+      </div>
+
+      <h3 class="text-center text-2xl font-bold p-8">Other ARPA-I Programs and Pilots</h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pb-8 px-4">
+        <div class="border-2 rounded-2xl border-cyan-600 bg-gray-100 shadow-lg p-4 flex flex-col justify-between gap-4">
+          <h3 class="font-bold">INSIGHTS</h3>
+          <p>
+            The Infrastructure Systems Insights through Geospatial-sensing for Holistic Transportation Solutions (INSIGHTS) project is ARPA-I's first step towards enabling development of practical,
+            cost-effective, continuously updated digital models of America's infrastructure at scale, including streets, highways, ports, rail lines, airports, and pipelines.
+          </p>
+          <Button text="ARPA-I INSIGHTS" href="#" color="light" iconSrc="./src/assets/icons/group_add.svg" />
+        </div>
+
+        <div class="border-2 rounded-2xl border-cyan-600 bg-gray-100 shadow-lg p-4 flex flex-col justify-between gap-4">
+          <h3 class="font-bold">X-BRIDGE</h3>
+          <p>
+            The ARPA-I eXceptional Bridges through Innovative Design and Groundbreaking Engineering (X-BRIDGE) program is focused on creating transformative materials, designs, and construction
+            techniques that can deliver bridges at half the cost, in half the time, and with twice the lifespan.
+          </p>
+          <Button text="ARPA-I X-BRIDGE" href="#" color="light" iconSrc="./src/assets/icons/group_add.svg"/>
+        </div>
       </div>
     </div>
-    <div>
-      <h3>X-BRIDGE</h3>
-      <p>
-        The ARPA-I eXceptional Bridges through Innovative Design and Groundbreaking Engineering (X-BRIDGE) program is focused on creating transformative materials, designs, and construction techniques
-        that can deliver bridges at half the cost, in half the time, and with twice the lifespan.
+    </section>
+    <section class="container m-auto py-1">
+      <div class="text-center my-8">
+        <h1 class="text-3xl text-balance font-bold text-center py-8 w-full lg:w-6/12 m-auto">What are the Heilmeier Questions?</h1>
+        <p class=" text-lg">Generating big rewards means taking big risks.</p>
+        <p class=" text-lg"><strong>But how much risk is worth taking?</strong></p>
+      </div>
+      <p class=" text-lg pb-4 mx-6">
+        At ARPA-I, we use the <span>
+          <a href="https://www.darpa.mil/about/heilmeier-catechism">Heilmeier Catechism</a>
+        </span>
+        to assess and think through every proposed research program.
       </p>
-      <Button text="ARPA-I X-BRIDGE" href="#" color="light" />
-    </div>
-  </section>
-  <section class="text-center">
-    <h1>What are the Heilmeier Questions?</h1>
-    <p>Generating big rewards means taking big risks.</p>
-    <strong>But how much risk is worth taking?</strong>
-    <p>
-      At ARPA-I, we use the <span>
-        <a href="https://www.darpa.mil/about/heilmeier-catechism">Heilmeier Catechism</a>
-      </span>
-      to assess and think through every proposed research program.
-    </p>
-    <div class="grid grid-cols-3">
-      <ol>
-        <li>What are you trying to do? Articulate your objectives using absolutely no jargon.</li>
-        <li>How is it done today, and what are the limits of current practice?</li>
-        <li>What is new in your approach and why do you think it will be successful?</li>
-        <li>Who cares? If you are successful, what difference will it make?</li>
-        <li>What are the risks?</li>
-        <li>How much will it cost</li>
-        <li>How long will it take?</li>
-        <li>What are the mid-term and final “exams” to check for success?</li>
-      </ol>
-    </div>
-    <strong>Use our recommended templates based on The Heilmeier Catechism</strong>
-    <Button text="Concept Template" href="#" color="dark" />
-    <Button text="Abstract Template" href="#" color="dark" />
-    <Button text="Slide Templates" href="#" color="dark" />
-  </section>
-  <section class="bottom-background flex">
-    <div class="bottom-popout my-auto">
-      <h2>Excited to Apply?</h2>
-      <p>Visit our challenge.gov site for authoritative resources on how to apply, details of prices, and timeline.</p>
-      <Button text="Visit Challenge.gov to get started" href="#" color="dark" iconSrc="/images/rocket.png" />
-      <p>Send your questions to ideas.arpa-I@dot.gov</p>
-    </div>
-  </section>
-  <div class="w-full">
-    <a href="#">Return to top</a>
-  </div>
-  <div class="text-white logo-strip text-center p-6">
-    <div class="w-full xl:max-w-5xl xl:px-6 pr-[7%] xs:pr-0 mx-auto flex flex-col sm:flex-row justify-between">
-      <div class="inline-block">
-        <ARPA_I_DOT_Logo class="w-100 sm:w-full" />
+        <ol class="sm:columns-3 list-decimal pl-5 gap-8 pb-8 mx-6">
+          <li>What are you trying to do? Articulate your objectives using absolutely no jargon.</li>
+          <li>How is it done today, and what are the limits of current practice?</li>
+          <li>What is new in your approach and why do you think it will be successful?</li>
+          <li>Who cares? If you are successful, what difference will it make?</li>
+          <li>What are the risks?</li>
+          <li>How much will it cost</li>
+          <li>How long will it take?</li>
+          <li>What are the mid-term and final “exams” to check for success?</li>
+        </ol>
+        <div class=" text-center text-lg pb-6 mx-6">
+      <strong>Use our recommended templates based on The Heilmeier Catechism</strong></div>
+      <div class=" grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 my-auto justify-center mx-6 px-10">
+      <Button text="Concept Template" href="#" color="dark" iconSrc="./src/assets/icons/lightbulb_outline.svg"/>
+      <Button text="Abstract Template" href="#" color="dark" iconSrc="./src/assets/icons/lightbulb_outline.svg"/>
+      <Button text="Slide Templates" href="#" color="dark" iconSrc="./src/assets/icons/lightbulb_outline.svg"/></div>
+    </section>
+    <section class="bottom-background flex">
+      <div class="bottom-popout my-auto">
+        <h2>Excited to Apply?</h2>
+        <p>Visit our challenge.gov site for authoritative resources on how to apply, details of prices, and timeline.</p>
+        <Button text="Visit Challenge.gov to get started" href="#" color="dark" iconSrc="/images/rocket.png" />
+        <p>Send your questions to ideas.arpa-I@dot.gov</p>
       </div>
-      <div class="inline-block">
-        <Facebook_Icon class="inline-block mx-1" />
-        <Twitter_Icon class="inline-block mx-1" />
-        <Instagram_Icon class="inline-block mx-1" />
+    </section>
+    <div class=" container p-4 m-auto">
+      <a href="#">Return to top</a>
+    </div>
+    <section class="logo-strip">
+    <div class="text-white container m-auto text-center p-6">
+      <div class="w-full mx-auto flex flex-col sm:flex-row justify-between sm:justify-center">
+        <div class="inline-block">
+          <ARPA_I_DOT_Logo class="w-100 sm:w-full" />
+        </div>
+        <div class="inline-block">
+          <Facebook_Icon class="inline-block mx-1" />
+          <Twitter_Icon class="inline-block mx-1" />
+          <Instagram_Icon class="inline-block mx-1" />
+        </div>
       </div>
     </div>
-  </div>
+  </section>
+  <style scoped lang="scss">
+    h1,
+    h2 {
+      color: #028493;
+    }
+
+    .background {
+      width: 100%;
+      background:
+        linear-gradient(0deg, rgba(28, 176, 230, 0.45) 0%, rgba(28, 176, 230, 0.45) 100%),
+        linear-gradient(180deg, rgba(28, 176, 230, 0.54) 0%, rgba(2, 70, 77, 0.79) 100%),
+        url("/images/FirstBGImage.jpeg") lightgray 50% / cover no-repeat;
+      background-blend-mode: multiply, normal;
+      z-index: -100;
+    }
+
+    .bottom-popout {
+      clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+      background-color: white;
+      height: 50%;
+      width: 50%;
+      position: relative;
+      margin-right: auto;
+    }
+
+    .bottom-background {
+      background:
+        linear-gradient(0deg, rgba(28, 176, 230, 0.45) 0%, rgba(28, 176, 230, 0.45) 100%),
+        linear-gradient(180deg, rgba(28, 176, 230, 0.54) 0%, rgba(2, 70, 77, 0.79) 100%),
+        url("/images/SecondBGImage.jpeg") lightgray 50% / cover no-repeat;
+      background-blend-mode: multiply, normal;
+      height: 50vh;
+      width: 100%;
+    }
+
+    .logo-strip {
+      background-color: rgba(0, 120, 135, 1);
+    }
+
+    a{
+      text-decoration: underline;
+      color: #028493;
+    }
+
+  </style>
 </BaseLayout>
-<style scoped lang="scss">
-  .background {
-    width: 100%;
-    background:
-      linear-gradient(0deg, rgba(28, 176, 230, 0.45) 0%, rgba(28, 176, 230, 0.45) 100%),
-      linear-gradient(180deg, rgba(28, 176, 230, 0.54) 0%, rgba(2, 70, 77, 0.79) 100%),
-      url("/images/FirstBGImage.jpeg") lightgray 50% / cover no-repeat;
-    background-blend-mode: multiply, normal;
-    z-index: -100;
-  }
-
-  .bottom-popout {
-    clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
-    background-color: white;
-    height: 50%;
-    width: 50%;
-    position: relative;
-    margin-right: auto;
-  }
-
-  .bottom-background {
-    background:
-      linear-gradient(0deg, rgba(28, 176, 230, 0.45) 0%, rgba(28, 176, 230, 0.45) 100%),
-      linear-gradient(180deg, rgba(28, 176, 230, 0.54) 0%, rgba(2, 70, 77, 0.79) 100%),
-      url("/images/SecondBGImage.jpeg") lightgray 50% / cover no-repeat;
-    background-blend-mode: multiply, normal;
-    height: 50vh;
-    width: 100%;
-  }
-
-  .logo-strip {
-    background-color: rgba(0, 120, 135, 1);
-  }
-</style>
