@@ -1,7 +1,8 @@
 ---
 import Navbar from "./Navbar.astro";
 import Footer from "./Footer.astro";
-import '../styles/global.css';
+import GovBanner from "../components/GovBanner.astro";
+import "../styles/global.css";
 ---
 
 <!doctype html>
@@ -17,27 +18,23 @@ import '../styles/global.css';
       href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   </head>
-    
-      <Navbar />
+  <GovBanner />
+  <Navbar />
 
-    
-    <main>
-      <slot />
-    </main>
-   
-      <Footer />
-   
-    
-  </body>
+  <main>
+    <slot />
+  </main>
+
+  <Footer />
+
+  <style>
+    html,
+    body {
+      font-family: "Public Sans", sans-serif;
+      scroll-behavior: smooth;
+    }
+  </style>
+
 </html>
-
-<style>
-  html,
-  body {
-    font-family: "Public Sans", sans-serif;
-    scroll-behavior: smooth;
-  }
-
-  
-</style>
