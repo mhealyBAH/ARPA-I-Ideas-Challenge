@@ -64,8 +64,7 @@ import Launch_Icon from "@assets/icons/launch.svg";
       <div class="border-2 rounded-2xl border-cyan-600 bg-white shadow-lg p-4">
         <h2 class="font-bold text-lg">Stage 1</h2>
         <p>
-          Submit a 4-5 page Concept Paper with your breakthrough transportation idea. Win one of up to 15 finalist
-          prizes worth $225,000, with top 5 winners receiving a further $75,000. You can even submit multiple ideas!
+          Submit a Concept Paper with your breakthrough transportation idea. Win one of up to 15 finalist prizes of $20,000. You can even submit multiple ideas!
         </p>
       </div>
       <div class="border-2 rounded-2xl border-cyan-600 bg-white shadow-lg p-4">
@@ -79,7 +78,7 @@ import Launch_Icon from "@assets/icons/launch.svg";
 
     <ol class="usa-process-list">
       <li class="usa-process-list__item">
-        <h4 class="usa-process-list__heading">Stage 1</h4>
+        <h4 class="usa-process-list__heading font-bold text-xl">Stage 1</h4>
         <p class="margin-top-05">
           Submit a Concept Paper describing a project idea for developing a breakthrough transportation technology
           and/or capability
@@ -94,7 +93,7 @@ import Launch_Icon from "@assets/icons/launch.svg";
         </ul>
       </li>
       <li class="usa-process-list__item">
-        <h4 class="usa-process-list__heading">Stage 2</h4>
+        <h4 class="usa-process-list__heading font-bold text-xl">Stage 2</h4>
         <p>
           All Stage 1 finalists will be eligible to submit a detailed project proposal and plans to compete in Stage 2:
         </p>
@@ -301,6 +300,61 @@ import Launch_Icon from "@assets/icons/launch.svg";
     a {
       text-decoration: underline;
       color: #028493;
+    
+    }
+    
+    .usa-process-list {
+      font-size: 1.06rem;
+      line-height: 1.5;
+      margin-bottom: 0;
+      margin-top: 0;
+      list-style-type: none;
+      padding-left: 0;
+      counter-reset: usa-numbered-list;
+      padding: 20px 0 0 calc(2.5rem / 2 - 0.5rem / 2);
+      position: relative;
+      display: block;
+      list-style-type: decimal;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      padding-inline-start: 40px;
+      unicode-bidi: isolate;
+    }
+
+    .usa-process-list__item::before {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      border-radius: 99rem;
+      background-color: #fff;
+      border: 0.25rem solid #1b1b1b;
+      box-shadow: 0 0 0 0.25rem #fff;
+      color: #1b1b1b;
+      content: counter(usa-numbered-list, decimal);
+      counter-increment: usa-numbered-list;
+      display: flex;
+      font-size: 1.33rem;
+      font-weight: 700;
+      height: 2.5rem;
+      left: 1.5rem;
+      line-height: 0.9;
+      margin-top: -0.4rem;
+      position: absolute;
+      width: 2.5rem;
+    }
+
+ 
+    .usa-process-list__item {
+      border-left: 0.5rem solid #028493;
+      font-size: 1.06rem;
+      margin-bottom: 0;
+      padding-bottom: 2rem;
+      padding-left: calc(calc(2.5rem / 2 - 0.25rem) * 2);
+    }
+
+    .usa-process-list__item:last-child {
+      margin-bottom: 0;
+      border-left: 0.5rem solid #ffffff;
     }
   </style>
 </BaseLayout>
