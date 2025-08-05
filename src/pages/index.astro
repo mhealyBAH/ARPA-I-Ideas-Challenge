@@ -16,6 +16,7 @@ import Edit_Icon from "@assets/icons/edit.svg";
 import Content_Copy_Icon from "@assets/icons/content_copy.svg";
 import Slides_Icon from "@assets/icons/slides.svg";
 import Launch_Icon from "@assets/icons/launch.svg";
+import Apply_Icon from "@assets/icons/upload_file.svg";
 ---
 
 <BaseLayout>
@@ -75,35 +76,14 @@ import Launch_Icon from "@assets/icons/launch.svg";
         </p>
       </div>
     </div>
-
-    <ol class="usa-process-list">
-      <li class="usa-process-list__item">
-        <h4 class="usa-process-list__heading font-bold text-xl">Stage 1</h4>
-        <p class="margin-top-05">
-          Submit a Concept Paper describing a project idea for developing a breakthrough transportation technology
-          and/or capability
-        </p>
-        <ul>
-          <li>
-            Up to 15 Stage 1 finalist prizes and up to 5 best Innovation Concept prizes may be awarded. Each Stage 1
-            finalist will be awarded a prize of $15,000 and invited to U.S. DOT Innovation Summit in late fall where
-            they will present their concept in a 7-minute pitch to a distinguished panel of judges and audience to
-            compete for the 5 Stage 1 best Innovation Concept awards worth an additional $15,000 each.
-          </li>
-        </ul>
-      </li>
-      <li class="usa-process-list__item">
-        <h4 class="usa-process-list__heading font-bold text-xl">Stage 2</h4>
-        <p>
-          All Stage 1 finalists will be eligible to submit a detailed project proposal and plans to compete in Stage 2:
-        </p>
-        <ul>
-          <li>Up to 7 Stage 2 finalist prizes may be awarded to recognize the best proposals and plans submitted.</li>
-          <li>Each Stage 2 prize will have a maximum of $100,000.</li>
-          <li>More details for Stage 2 will be provided in subsequent communications to Stage 1 applicants.</li>
-        </ul>
-      </li>
-    </ol>
+    <div class="flex justify-center text-xl">
+ <Button
+            text="Accepting Applications Now"
+            href="#"
+            color="dark"
+            iconSrc={Apply_Icon}
+          />
+    </div>
     <h1 class="text-3xl text-balance font-bold text-center py-8 w-full lg:w-6/12 m-auto">
       The total value of all Stage 1 and 2 prizes awarded will be a maximum of $1,000,000.
     </h1>
@@ -294,58 +274,5 @@ import Launch_Icon from "@assets/icons/launch.svg";
     
     }
     
-    .usa-process-list {
-      font-size: 1.06rem;
-      line-height: 1.5;
-      margin-bottom: 0;
-      margin-top: 0;
-      list-style-type: none;
-      padding-left: 0;
-      counter-reset: usa-numbered-list;
-      padding: 20px 0 0 calc(2.5rem / 2 - 0.5rem / 2);
-      position: relative;
-      display: block;
-      list-style-type: decimal;
-      margin-block-start: 1em;
-      margin-block-end: 1em;
-      padding-inline-start: 40px;
-      unicode-bidi: isolate;
-    }
-
-    .usa-process-list__item::before {
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      border-radius: 99rem;
-      background-color: #fff;
-      border: 0.25rem solid #1b1b1b;
-      box-shadow: 0 0 0 0.25rem #fff;
-      color: #1b1b1b;
-      content: counter(usa-numbered-list, decimal);
-      counter-increment: usa-numbered-list;
-      display: flex;
-      font-size: 1.33rem;
-      font-weight: 700;
-      height: 2.5rem;
-      left: 1.5rem;
-      line-height: 0.9;
-      margin-top: -0.4rem;
-      position: absolute;
-      width: 2.5rem;
-    }
-
- 
-    .usa-process-list__item {
-      border-left: 0.5rem solid #028493;
-      font-size: 1.06rem;
-      margin-bottom: 0;
-      padding-bottom: 2rem;
-      padding-left: calc(calc(2.5rem / 2 - 0.25rem) * 2);
-    }
-
-    .usa-process-list__item:last-child {
-      margin-bottom: 0;
-      border-left: 0.5rem solid #ffffff;
-    }
   </style>
 </BaseLayout>
