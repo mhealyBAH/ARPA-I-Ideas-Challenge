@@ -1,5 +1,6 @@
 ---
 const { text, href, color, iconSrc } = Astro.props;
+console.log("iconSrc:", iconSrc);
 
 const lightStyle = {
   backgroundColor: "white",
@@ -16,7 +17,7 @@ const buttonStyle = color === "light" ? lightStyle : darkStyle;
 
 <a style={buttonStyle} class="flex items-center justify-center gap-2">
   {text}
-  <img src={iconSrc} class="w-5 h-5" />
+  <img src={iconSrc.src} class="w-5 h-5" />
 </a>
 
 <style scoped>

@@ -10,6 +10,12 @@ import Knowledge from "@assets/icons/Knowledge-icon.svg";
 import Optimization from "@assets/icons/Optimization-icon.svg";
 import Construction from "@assets/icons/Construction-icon.svg";
 import Technologies from "@assets/icons/Technologies-icon.svg";
+import Lightbulb_Icon from "@assets/icons/lightbulb_outline.svg";
+import Group_Add_Icon from "@assets/icons/group_add.svg";
+import Edit_Icon from "@assets/icons/edit.svg";
+import Content_Copy_Icon from "@assets/icons/content_copy.svg";
+import Slides_Icon from "@assets/icons/slides.svg";
+import Launch_Icon from "@assets/icons/launch.svg";
 ---
 
 <BaseLayout>
@@ -28,8 +34,8 @@ import Technologies from "@assets/icons/Technologies-icon.svg";
             <div class="flex flex-col gap-3 m-0 lg:ms-20">
               <p>Build America's transportation future - submit bold ideas to ARPA-I's Ideas Challenge and transform how we move, build, and connect!</p>
               <strong><p class="bold mb-2">Now accepting application until [date]</p></strong>
-              <Button text="Submit Your Ideas Now at Challenge.gov" href="https://www.challenge.gov" color="dark" iconSrc="./src/assets/icons/lightbulb_outline.svg" />
-              <Button text="Sign up for the upcoming Webinar" href="https://www.example.com/webinar" color="light" iconSrc="./src/assets/icons/group_add.svg" />
+              <Button text="Submit Your Ideas Now at Challenge.gov" href="https://www.challenge.gov" color="dark" iconSrc={Lightbulb_Icon} />
+              <Button text="Sign up for the upcoming Webinar" href="https://www.example.com/webinar" color="light" iconSrc={Group_Add_Icon} />
             </div>
           </div>
         </div>
@@ -127,7 +133,7 @@ import Technologies from "@assets/icons/Technologies-icon.svg";
             The Infrastructure Systems Insights through Geospatial-sensing for Holistic Transportation Solutions (INSIGHTS) project is ARPA-I's first step towards enabling development of practical,
             cost-effective, continuously updated digital models of America's infrastructure at scale, including streets, highways, ports, rail lines, airports, and pipelines.
           </p>
-          <Button text="ARPA-I INSIGHTS" href="#" color="light" iconSrc="./src/assets/icons/launch.svg" />
+          <Button text="ARPA-I INSIGHTS" href="#" color="light" iconSrc={Launch_Icon} />
         </div>
 
         <div class="border-2 rounded-2xl border-cyan-600 bg-gray-100 shadow-lg p-4 flex flex-col justify-between gap-4">
@@ -136,7 +142,7 @@ import Technologies from "@assets/icons/Technologies-icon.svg";
             The ARPA-I eXceptional Bridges through Innovative Design and Groundbreaking Engineering (X-BRIDGE) program is focused on creating transformative materials, designs, and construction
             techniques that can deliver bridges at half the cost, in half the time, and with twice the lifespan.
           </p>
-          <Button text="ARPA-I X-BRIDGE" href="#" color="light" iconSrc="./src/assets/icons/launch.svg" />
+          <Button text="ARPA-I X-BRIDGE" href="#" color="light" iconSrc={Launch_Icon} />
         </div>
       </div>
     </div>
@@ -167,9 +173,9 @@ import Technologies from "@assets/icons/Technologies-icon.svg";
       <strong>Use our recommended templates based on The Heilmeier Catechism</strong>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 my-auto justify-center mx-6 px-10">
-      <Button text="Concept Template" href="#" color="dark" iconSrc="./src/assets/icons/edit.svg" />
-      <Button text="Abstract Template" href="#" color="dark" iconSrc="./src/assets/icons/content_copy.svg" />
-      <Button text="Slide Templates" href="#" color="dark" iconSrc="./src/assets/icons/slides.svg" />
+      <Button text="Concept Template" href="#" color="dark" iconSrc={Edit_Icon} />
+      <Button text="Abstract Template" href="#" color="dark" iconSrc={Content_Copy_Icon} />
+      <Button text="Slide Templates" href="#" color="dark" iconSrc={Slides_Icon} />
     </div>
   </section>
   <section id="Apply" class="bottom-background flex">
@@ -179,7 +185,7 @@ import Technologies from "@assets/icons/Technologies-icon.svg";
           <h2 class="text-3xl text-balance font-bold">Excited to Apply?</h2>
 
           <p>Visit our challenge.gov site for authoritative resources on how to apply, details of prices, and timeline.</p>
-          <Button text="Visit Challenge.gov to get started" href="#" color="dark" iconSrc="./src/assets/icons/lightbulb_outline.svg" />
+          <Button text="Visit Challenge.gov to get started" href="#" color="dark" iconSrc={Lightbulb_Icon} />
           <p>Send your questions to <a href="mailto:ideas.arpa-I@dot.gov">ideas.arpa-I@dot.gov</a></p>
         </div>
       </div>
