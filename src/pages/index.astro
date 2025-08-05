@@ -6,7 +6,6 @@ import Twitter_Icon from "../assets/icons/twitter.svg";
 import Facebook_Icon from "../assets/icons/facebook.svg";
 import Instagram_Icon from "./src/assets/icons/instagram.svg";
 import HeroLogo from "./src/assets/logos/hero-logo.svg";
-import Side from "./src/assets/side.svg";
 import Knowledge from "./src/assets/icons/Knowledge-icon.svg";
 import Optimization from "./src/assets/icons/Optimization-icon.svg";
 import Construction from "./src/assets/icons/Construction-icon.svg";
@@ -17,14 +16,18 @@ import Technologies from "./src/assets/icons/Technologies-icon.svg";
   <section class="background flex pt-20 pb-10 2xl:pt-50 lg:pb-10">
     <div class="flex flex-col w-full justify-center">
       <div class="flex my-auto w-full justify-end gap-0 mb-15">
-        <div class="hidden lg:block w-20"><Side class="" /></div>
+        <div class="hidden lg:block w-20">
+          <svg width="100" height="430" viewBox="0 0 100 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="m 0 0 H 100 v 500 H 80 L 0 0 Z" fill="white"></path>
+          </svg>
+        </div>
 
         <div class="flex mx-auto lg:mx-0 container w-full md:w-10/12 lg:w-7/12 xl:w-6/12 bg-white hero-side">
           <div class="flex flex-col gap-2 h-full lg:w-xl text-base lg:text-lg xl:text-xl p-5">
             <HeroLogo class="w-full" />
-            <div class="flex flex-col gap-2 m-0 lg:ms-20">
+            <div class="flex flex-col gap-3 m-0 lg:ms-20">
               <p>Build America's transportation future - submit bold ideas to ARPA-I's Ideas Challenge and transform how we move, build, and connect!</p>
-              <strong><p class="bold">Now accepting application until [date]</p></strong>
+              <strong><p class="bold mb-2">Now accepting application until [date]</p></strong>
               <Button text="Submit Your Ideas Now at Challenge.gov" href="https://www.challenge.gov" color="dark" iconSrc="./src/assets/icons/lightbulb_outline.svg" />
               <Button text="Sign up for the upcoming Webinar" href="https://www.example.com/webinar" color="light" iconSrc="./src/assets/icons/group_add.svg" />
             </div>
@@ -124,7 +127,7 @@ import Technologies from "./src/assets/icons/Technologies-icon.svg";
             The Infrastructure Systems Insights through Geospatial-sensing for Holistic Transportation Solutions (INSIGHTS) project is ARPA-I's first step towards enabling development of practical,
             cost-effective, continuously updated digital models of America's infrastructure at scale, including streets, highways, ports, rail lines, airports, and pipelines.
           </p>
-          <Button text="ARPA-I INSIGHTS" href="#" color="light" iconSrc="./src/assets/icons/group_add.svg" />
+          <Button text="ARPA-I INSIGHTS" href="#" color="light" iconSrc="./src/assets/icons/launch.svg" />
         </div>
 
         <div class="border-2 rounded-2xl border-cyan-600 bg-gray-100 shadow-lg p-4 flex flex-col justify-between gap-4">
@@ -133,7 +136,7 @@ import Technologies from "./src/assets/icons/Technologies-icon.svg";
             The ARPA-I eXceptional Bridges through Innovative Design and Groundbreaking Engineering (X-BRIDGE) program is focused on creating transformative materials, designs, and construction
             techniques that can deliver bridges at half the cost, in half the time, and with twice the lifespan.
           </p>
-          <Button text="ARPA-I X-BRIDGE" href="#" color="light" iconSrc="./src/assets/icons/group_add.svg" />
+          <Button text="ARPA-I X-BRIDGE" href="#" color="light" iconSrc="./src/assets/icons/launch.svg" />
         </div>
       </div>
     </div>
@@ -164,13 +167,13 @@ import Technologies from "./src/assets/icons/Technologies-icon.svg";
       <strong>Use our recommended templates based on The Heilmeier Catechism</strong>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 my-auto justify-center mx-6 px-10">
-      <Button text="Concept Template" href="#" color="dark" iconSrc="./src/assets/icons/lightbulb_outline.svg" />
-      <Button text="Abstract Template" href="#" color="dark" iconSrc="./src/assets/icons/lightbulb_outline.svg" />
-      <Button text="Slide Templates" href="#" color="dark" iconSrc="./src/assets/icons/lightbulb_outline.svg" />
+      <Button text="Concept Template" href="#" color="dark" iconSrc="./src/assets/icons/edit.svg" />
+      <Button text="Abstract Template" href="#" color="dark" iconSrc="./src/assets/icons/content_copy.svg" />
+      <Button text="Slide Templates" href="#" color="dark" iconSrc="./src/assets/icons/slides.svg" />
     </div>
   </section>
   <section id="Apply" class="bottom-background flex">
-    <div class="flex my-auto w-full justify-start gap-0 ">
+    <div class="flex my-auto w-full justify-start gap-0">
       <div class="flex mx-auto lg:mx-0 container w-full md:w-10/12 lg:w-7/12 xl:w-6/12 bg-white hero-side justify-end">
         <div class="flex flex-col gap-4 h-full lg:w-xl text-base lg:text-lg xl:text-xl p-5 justify-center">
           <h2 class="text-3xl text-balance font-bold">Excited to Apply?</h2>
