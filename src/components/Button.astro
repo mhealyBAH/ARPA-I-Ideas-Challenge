@@ -8,21 +8,23 @@ const lightStyle = {
 };
 const darkStyle = {
   backgroundColor: "rgba(24, 171, 184, 1)",
+  background: "linear-gradient(0deg, var(--Ideas-Teal, #028493) 0%, #0E98B9 100%)",
   color: "white",
 };
 const buttonStyle = color === "light" ? lightStyle : darkStyle;
 ---
 
-<button style={buttonStyle} class="flex items-center gap-2">
+<a style={buttonStyle} class="flex items-center justify-center gap-2">
   {text}
   <img src={iconSrc} class="w-5 h-5" />
-</button>
+</a>
 
 <style scoped>
-  button {
+  a {
     cursor: pointer;
     padding: 0.5rem 1rem;
     border-radius: 0.25rem;
     font-weight: 600;
   }
+  
 </style>
